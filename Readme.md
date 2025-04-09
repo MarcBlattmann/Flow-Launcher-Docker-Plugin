@@ -1,7 +1,5 @@
 # 🐳 Docker Manager for Flow Launcher
 
-![Docker Logo](Images/docker.png)
-
 > Manage your Docker containers and images effortlessly from Flow Launcher!
 
 ## ✨ Features
@@ -33,10 +31,6 @@
 | `docker prune` | Clean up unused Docker resources |
 | `docker logs [name]` | View container logs |
 | `docker stats` | View container statistics |
-
-## 🖼️ Screenshots
-
-*[Insert screenshots here]*
 
 ## 🔄 Requirements
 
