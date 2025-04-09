@@ -1,12 +1,12 @@
 {
-    "ID": "PluginId",
-    "ActionKeyword": "PluginActionKeyword",
-    "Name": "MyFlowPlugin",
-    "Description": "PluginDescription",
-    "Author": "PluginAuthor",
-    "Version": "1.0.0",
-    "Language": "csharp",
-    "Website": "https://github.com/PluginAuthor/Flow.Launcher.Plugin.MyFlowPlugin",
-    "IcoPath": "icon.png",
-    "ExecuteFileName": "Flow.Launcher.Plugin.MyFlowPlugin.dll"
+  "ID": "D2D2C23B107C4CC99A8C3D95CE3F7DBF",
+  "ActionKeyword": "docker",
+  "Name": "Docker Manager",
+  "Description": "Manage Docker containers and images",
+  "Author": "YourName",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "",
+  "ExecuteFileName": "Flow.Launcher.Plugin.MyFlowPlugin.dll",
+  "IcoPath": "Images\\docker.png"
 }

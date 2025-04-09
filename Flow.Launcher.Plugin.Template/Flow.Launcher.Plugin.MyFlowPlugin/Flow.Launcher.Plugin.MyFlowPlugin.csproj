@@ -7,7 +7,7 @@
     <Authors>PluginAuthor</Authors>
     <PackageProjectUrl>https://github.com/PluginAuthor/Flow.Launcher.Plugin.MyFlowPlugin</PackageProjectUrl>
     <RepositoryUrl>https://github.com/PluginAuthor/Flow.Launcher.Plugin.MyFlowPlugin</RepositoryUrl>
-    <PackageTags>flow-launcher flow-plugin</PackageTags>
+    <PackageTags>flow-launcher flow-plugin docker</PackageTags>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
@@ -22,10 +22,14 @@
     <Content Include="plugin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\*.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Flow.Launcher.Plugin" Version="4.4.0" />
+    <PackageReference Include="Docker.DotNet" Version="3.125.15" />
   </ItemGroup>
 
 </Project>
