@@ -1,1 +1,1 @@
-Docker | Flow launtcher plugin
+Docker | Flow launcher plugin
