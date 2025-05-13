@@ -1,41 +1,61 @@
-Flow-Launcher dotnet-new template [![Build status](https://ci.appveyor.com/api/projects/status/nii6rmp022mn4yp6?svg=true)](https://ci.appveyor.com/project/JohnTheGr8/dotnet-template)
-==================
+# 🐳 Docker Manager for Flow Launcher
 
-A dotnet CLI template to start off plugins for the [Flow Launcher](https://github.com/Flow-Launcher/Flow.Launcher).
+> Manage your Docker containers and images effortlessly from Flow Launcher!
 
-### Installation
+## ✨ Features
 
-Install the template by running the following command:
+- 🚀 **Quick Container Management**: Start, stop, restart, and remove containers in seconds
+- 🖼️ **Image Operations**: List, search, and remove Docker images without terminal commands
+- 📊 **Container Stats**: View resource usage of your running containers
+- 📝 **Container Logs**: Quickly view logs to troubleshoot issues
+- 🧹 **Resource Pruning**: Clean up unused containers, images, volumes, and networks
 
-    dotnet new install Flow.Launcher.Plugin.Template
+## 🔧 Installation
 
-### Usage
+1. Download the latest release or build from source
+2. Extract to: `%APPDATA%\FlowLauncher\Plugins\Flow.Launcher.Plugin.MyFlowPlugin\`
+3. Restart Flow Launcher
+4. Type `docker` to get started!
 
-    dotnet new flow-plugin --name SamplePlugin --pluginAuthor YourGithubUsername
+## 📋 Commands
 
-for example, to start a plugin for `Spotify` with the `sp` keyword and a description, you would run:
+| Command | Description |
+|---------|-------------|
+| `docker containers` | List all containers (aliases: `ps`, `ls`) |
+| `docker images` | List all Docker images (alias: `img`) |
+| `docker start [name]` | Start a container |
+| `docker stop [name]` | Stop a container |
+| `docker restart [name]` | Restart a container |
+| `docker remove [name]` | Remove a container (alias: `rm`) |
+| `docker rmi [name]` | Remove a Docker image |
+| `docker prune` | Clean up unused Docker resources |
+| `docker logs [name]` | View container logs |
+| `docker stats` | View container statistics |
 
-```ps
-dotnet new flow-plugin --name Spotify --keyword sp --pluginAuthor MyNameOnGithub --description "a Spotify plugin for Flow-Launcher"
+## 🔄 Requirements
+
+- Flow Launcher
+- Docker Desktop or Docker Engine
+- .NET Runtime
+
+## 🛠️ Development
+
+This plugin is built with C# and Docker.DotNet. To develop locally:
+
+```shell
+git clone https://github.com/yourusername/Flow.Launcher.Plugin.MyFlowPlugin.git
+cd Flow.Launcher.Plugin.MyFlowPlugin
+dotnet build
 ```
 
-### Options
+## 📝 License
 
-| Option          | Description                                                                                             |
-| --------------- | ------------------------------------------------------------------------------------------------------- |
-| `--name`        | The name of the plugin. Entering `SamplePlugin` will be expanded to `Flow.Launcher.Plugin.SamplePlugin` |
-| `--pluginAuthor`| The username of the author. Will be used as the username in Github links.                               |
-| `--keyword`     | The action keyword of the plugin. Default value is `*`                                                  |
-| `--description` | The description of the plugin that will be used in `plugin.json` and appear in the UI.                  |
+[MIT License](LICENSE)
 
-### Next steps
+## 👥 Contributing
 
-After generating the source files for your new plugin:
+Contributions are welcome! Feel free to submit a Pull Request.
 
-- check the `.csproj` file and `plugin.json` to verify the details are correct
-- optionally, add an icon named `icon.png` inside the project folder
-- open `Main.cs` and start writing your new plugin
+---
 
-### Uninstall
-
-    dotnet new uninstall Flow.Launcher.Plugin.Template
+⭐ If you find this plugin helpful, please star it on GitHub!
